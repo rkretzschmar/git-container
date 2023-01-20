@@ -9,6 +9,8 @@ COPY package.json /app/
 
 RUN npm install
 
+RUN chown -R 1000:1000 /app
+
 USER 1000
 
 EXPOSE 3000
