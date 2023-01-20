@@ -1,6 +1,6 @@
 FROM node:alpine3.17
 
-RUN apk update && apk add git
+RUN apk update && apk add git && apk add openssh
 
 WORKDIR /app
 
